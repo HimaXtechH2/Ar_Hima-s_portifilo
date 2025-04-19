@@ -5,9 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="A beautiful, animated, and interactive website with smooth transitions and effects.">
   <title>Information About Me</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- EmailJS Library -->
-  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
 
@@ -66,9 +65,9 @@
     <div class="section-content">
       <h2>Contact Us</h2>
       <form id="contact-form">
-        <input type="text" id="name" name="name" placeholder="Your Name" required />
-        <input type="email" id="user-email" name="email" placeholder="Your Email" required />
-        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
         <button type="submit" class="btn">Send Message</button>
       </form>
     </div>
@@ -79,7 +78,6 @@
     <p>&copy; 2025 Your Website. All Rights Reserved.</p>
   </footer>
 
-  <!-- External JS -->
   <script src="script.js"></script>
 </body>
 </html>
