@@ -1,5 +1,3 @@
-# HimaXtechH2.github.io
-Personal website for projects and portfolio
 # HimaXtech Portfolio Website
 
 Welcome to the official portfolio website of **HimaXtech**! This website showcases my work, projects, and services with a focus on interactive design, smooth animations, and engaging user experiences.
