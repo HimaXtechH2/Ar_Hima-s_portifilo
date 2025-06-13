@@ -1,83 +1,190 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
+  <title>بورتفوليو هيما</title>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="A beautiful, animated, and interactive website with smooth transitions and effects.">
-  <title>Information About Me</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+	body {
+	  margin: 0;
+	  padding: 0;
+	  font-family: Arial, sans-serif;
+	  color: #222;
+	  background:url("https://i.postimg.cc/FR3bwWW5/pexels-padrinan-19670.png") no-repeat;
+	  background-size:cover;
+	  background-position:center;
+	  animation: fadein 4s ease;
+	}
+	@keyframes fadein {
+	  from { opacity: 0; }
+	  to   { opacity: 1; }
+	}
+	html {
+	  scroll-behavior: smooth;
+	}
+	.container {
+	  text-align: center;
+	  padding: 30px 20px;
+	  max-width: 700px;
+	  margin: 40px auto;
+	  background:transparent;
+	  border-radius: 12px;
+	}
+	h1 {
+	  font-size: 48px;
+	  margin-bottom: 10px;
+	  color: #1a73e8;
+	}
+	h2 {
+	  font-size: 40px;
+	  margin-bottom: 20px;
+	  color: #333;
+	}
+	p {
+	  font-size: 25px;
+	  line-height: 1.6;
+	  color: #555;
+	}
+	.cerfs {
+	  max-width: 700px;
+	  margin: 50px auto;
+	  text-align: center;
+	  font-size: 35px;
+	  font-weight: bold;
+	  color: #1a73e8;
+	  padding-bottom: 20px;
+	  border-radius: 12px;
+	}
+	.cerfs img {
+	  width: 90%;
+	  max-width: 600px;
+	  border-radius: 15px;
+	  box-shadow: 0 0 20px rgba(26, 115, 232, 0.4);
+	  transition: transform 0.3s ease;
+	  cursor: pointer;
+	  display: block;
+	  margin: 0 auto;
+	}
+	.cerfs img:hover {
+	  transform: scale(1.05);
+	  box-shadow: 0 0 30px rgba(26, 115, 232, 0.7);
+	}
+	.cerfs ul {
+	  list-style:none;
+	  padding:0px;
+	}
+	.contact {
+	  text-align: center;
+	  margin-top: 40px;
+	  padding-bottom: 40px;
+	}
+	#cont {
+	  font-size: 30px;
+	  font-family: Arial, sans-serif;
+	  font-weight: bold;
+	  margin-bottom: 20px;
+	}
+	.icons {
+	  list-style: none;
+	  display: flex;
+	  justify-content: center;
+	  gap: 20px;
+	  padding: 0;
+	  margin: 0;
+	}
+	.icons li img {
+	  width: 40px;
+	  height: 40px;
+	  transition: transform 0.2s ease;
+	  border-radius: 10px;
+	}
+	.icons li img:hover {
+	  transform: scale(1.2);
+	  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	}
+	a {
+	  text-decoration:none;
+	}
+	#game{
+	  color:red;
+	  font-size:30px;
+	  transition: all 2s ease-in-out;
+	  box-shadow: 0 0 20px rgba(26, 115, 232, 0.4);
+	  border-radius:15px;
+	  margin: 10px;
+	  padding:10px;
+	  font-weight:bold;
+	  display:inline;
+	  cursor:pointer;
+	  animation: fadein 4s ease;
+	}
+	#game:hover {
+	  color:red;
+	  font-size:32px;
+	  transform: scale(3) rotate(5deg);
+	  box-shadow: 0 0 30px rgba(26, 115, 232, 0.7);
+	  padding:5px;
+	  margin:5px;
+	  border-radius:30px;
+	}
+	.end {
+	  text-align:center;
+	  font-size:25px;
+	  color:#291b18;
+	}
+  </style>
+  <link rel="icon" href="https://i.postimg.cc/qByY6PRx/portifilo.png" type="image/png">
 </head>
 <body>
-
-  <!-- Navbar -->
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <h1>Welcome to Our Profile</h1>
-      <p>Your one-stop solution for everything!</p>
-      <a href="#about" class="btn">Learn More</a>
-    </div>
+  <div class="container">
+	<h1><strong>بورتفوليو هيما</strong></h1>
+	<h2>مين أنا؟</h2>
+	<p>
+	أنا عندي ١٤ سنة حاليًا،
+	<br>
+	لسه مبتدئ في تطوير الويب، بس معايا شهادة من كورس سولوليرن. شوفها تحت شوية. الكورس كان فيه:<br>
+	<strong>HTML، CSS، وJavaScript</strong>
+	<br>
+	أنا عملت لعبة روبلوكس وأنا عندي ٩ سنين، استخدمت كود جاهز ونماذج ببلاش
+	<br>
+	<a href="https://www.roblox.com/games/11822063524/Obby-Migo9Yt" target="_blank" id="game">
+	<strong>اضغط هنا وجربها!</strong>
+	</a>
+  <div class="cerfs">
+	الشهادات:
+	<ul>
+		<li>
+			<img src="https://i.postimg.cc/bv3xMs4y/certificate.png" alt="الشهادة">
+		</li>
+		<li>
+			<img src="https://i.postimg.cc/C1yZrTZY/IMG-3592.jpg" alt="شهادة جافا سكريبت">
+		</li>
+	</ul>
+  </div>
+  <div class="contact">
+	<h3 id="cont">كلّمني على:</h3>
+	<ul class="icons">
+	  <li class="facebook">
+		<a href="https://www.facebook.com/hima.progames" target="_blank" rel="noopener noreferrer">
+		  <img src="https://i.postimg.cc/PqMMN5BF/facebook.png" alt="فيسبوك">
+		</a>
+	  </li>
+	  <li class="email">
+		<a href="mailto:himagaming271@gmail.com" target="_blank" rel="noopener noreferrer">
+		  <img src="https://i.postimg.cc/rm7hRm19/gmail.png" alt="ايميل" onclick='alert("ايميلي: himagaming271@gmail.com")'>
+		</a>
+	  </li>
+	  <li class="Sololearn">
+		<a href="https://www.sololearn.com/en/profile/33892731" target="_blank" rel="noopener noreferrer">
+		  <img src="https://i.postimg.cc/g2x9vfYD/Sololearn.png" alt="بروفايلي على سولوليرن">
+		</a>
+	  </li>
+	</ul>
+  </div>
+  <section class="end">
+	<footer>
+	© ٢٠٢٥ إبراهيم هاني. كل الحقوق محفوظة
+	</footer>
   </section>
-
-  <!-- About Section -->
-  <section id="about" class="about">
-    <div class="section-content">
-      <h2>About Us</h2>
-      <p>We create amazing websites with state-of-the-art animations and effects!</p>
-    </div>
-  </section>
-
-  <!-- Services Section -->
-  <section id="services" class="services">
-    <div class="section-content">
-      <h2>Our Services</h2>
-      <div class="service-boxes">
-        <div class="service-box">
-          <h3>Web Design</h3>
-          <p>We design user-friendly websites that are visually stunning.</p>
-        </div>
-        <div class="service-box">
-          <h3>Web Development</h3>
-          <p>We develop high-performance websites with advanced functionality.</p>
-        </div>
-        <div class="service-box">
-          <h3>SEO Optimization</h3>
-          <p>We ensure your website ranks higher on search engines with expert SEO techniques.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <div class="section-content">
-      <h2>Contact Us</h2>
-      <form id="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Your Website. All Rights Reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
