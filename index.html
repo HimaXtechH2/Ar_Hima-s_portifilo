@@ -1,194 +1,375 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <title>معلومات عن هيما</title>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8" >
+  <title>
+  بورتفوليو هيما
+  </title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-	body {
-	  margin: 0;
-	  padding: 0;
-	  font-family: Arial, sans-serif;
-	  color: #222;
-	  background:url("https://i.postimg.cc/FR3bwWW5/pexels-padrinan-19670.png") no-repeat;
-	  background-size:cover;
-	  background-position:center;
-	  animation: fadein 4s ease;
-	}
-	@keyframes fadein {
-	  from { opacity: 0; }
-	  to   { opacity: 1; }
-	}
-	html {
-	  scroll-behavior: smooth;
-	}
-	.container {
-	  text-align: center;
-	  padding: 30px 20px;
-	  max-width: 700px;
-	  margin: 40px auto;
-	  background:transparent;
-	  border-radius: 12px;
-	}
-	h1 {
-	  font-size: 48px;
-	  margin-bottom: 10px;
-	  color: #1a73e8;
-	}
-	h2 {
-	  font-size: 40px;
-	  margin-bottom: 20px;
-	  color: #333;
-	}
-	p {
-	  font-size: 25px;
-	  line-height: 1.6;
-	  color: #555;
-	}
-	.cerfs {
-	  max-width: 700px;
-	  margin: 50px auto;
-	  text-align: center;
-	  font-size: 35px;
-	  font-weight: bold;
-	  color: #1a73e8;
-	  padding-bottom: 20px;
-	  border-radius: 12px;
-	}
-	.cerfs img {
-	  width: 90%;
-	  max-width: 600px;
-	  border-radius: 15px;
-	  box-shadow: 0 0 20px rgba(26, 115, 232, 0.4);
-	  transition: transform 0.3s ease;
-	  cursor: pointer;
-	  display: block;
-	  margin: 0 auto;
-	}
-	.cerfs img:hover {
-	  transform: scale(1.05);
-	  box-shadow: 0 0 30px rgba(26, 115, 232, 0.7);
-	}
-	.cerfs ul {
-	  list-style:none;
-	  padding:0px;
-	}
-	.contact {
-	  text-align: center;
-	  margin-top: 40px;
-	  padding-bottom: 40px;
-	}
-	#cont {
-	  font-size: 30px;
-	  font-family: Arial, sans-serif;
-	  font-weight: bold;
-	  margin-bottom: 20px;
-	}
-	.icons {
-	  list-style: none;
-	  display: flex;
-	  justify-content: center;
-	  gap: 20px;
-	  padding: 0;
-	  margin: 0;
-	}
-	.icons li img {
-	  width: 40px;
-	  height: 40px;
-	  transition: transform 0.2s ease;
-	  border-radius: 10px;
-	}
-	.icons li img:hover {
-	  transform: scale(1.2);
-	  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-	}
-	a {
-	  text-decoration:none;
-	}
-	#game{
-	  color:red;
-	  font-size:30px;
-	  transition: all 2s ease-in-out;
-	  box-shadow: 0 0 20px rgba(26, 115, 232, 0.4);
-	  border-radius:15px;
-	  margin: 10px;
-	  padding:10px;
-	  font-weight:bold;
-	  display:inline;
-	  cursor:pointer;
-	  animation: fadein 4s ease;
-	}
-	#game:hover {
-	  color:red;
-	  font-size:32px;
-	  transform: scale(3) rotate(5deg);
-	  box-shadow: 0 0 30px rgba(26, 115, 232, 0.7);
-	  padding:5px;
-	  margin:5px;
-	  border-radius:30px;
-	}
-	.end {
-	  text-align:center;
-	  font-size:25px;
-	  color:#291b18;
-	}
-  </style>
   <link rel="icon" href="https://i.postimg.cc/qByY6PRx/portifilo.png" type="image/png">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      color: #222;
+      background: url("https://i.postimg.cc/FR3bwWW5/pexels-padrinan-19670.png") no-repeat center center;
+      background-size: cover;
+      animation: fadein 4s ease;
+    }
+
+    @keyframes fadein {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    #container {
+      text-align: center;
+      padding: 30px 20px;
+      max-width: 700px;
+      margin: 40px auto;
+      background: transparent;
+      width: 90%;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+      color: #1a73e8;
+    }
+
+    h2 {
+      font-size: 40px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    p {
+      font-size: 27px;
+      font-weight: bold;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    #cerfs {
+      max-width: 700px;
+      margin: 50px auto;
+      text-align: center;
+      font-size: 35px;
+      font-weight: bold;
+      color: #1a73e8;
+      padding-bottom: 20px;
+      border-radius: 12px;
+    }
+
+    #cerfs img {
+      width: 90%;
+      max-width: 600px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(26, 115, 232, 0.4);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      display: block;
+      margin: 0 auto;
+    }
+
+    #cerfs img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px rgba(26, 115, 232, 0.7);
+    }
+
+    #cerfs ul {
+      list-style: none;
+      padding: 0px;
+    }
+
+    .contact {
+      text-align: center;
+      margin-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    #cont {
+      font-size: 30px;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .icons {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+      flex-wrap: wrap;
+    }
+
+    .icons li img {
+      width: 40px;
+      height: 40px;
+      transition: transform 0.2s ease;
+      border-radius: 10px;
+    }
+
+    .icons li img:hover {
+      transform: scale(1.2);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .game {
+      color: red;
+      font-size: 30px;
+      transition: all 2s ease-in-out;
+      box-shadow: 0 0 20px rgba(26, 115, 232, 0.4);
+      border-radius: 15px;
+      margin: 10px;
+      padding: 10px;
+      font-weight: bold;
+      display: inline;
+      cursor: pointer;
+    }
+
+    .game:hover {
+      transform: scale(1.5) rotate(5deg);
+      box-shadow: 0 0 30px rgba(26, 115, 232, 0.7);
+      padding: 5px;
+      margin: 5px;
+      border-radius: 30px;
+    }
+
+    #end {
+      text-align: center;
+      font-size: 1.2rem;
+      color: orange;
+      position: fixed;
+      padding: 10px 20px;
+      border-radius: 10px;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(255,255,255,0.2);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 0 20px rgba(26, 115, 232, 0.4);
+      font-weight: bold;
+    }
+
+    #pro-jects ol {
+      list-style: none;
+      text-align: right;
+      padding: 0;
+      margin: 0;
+    }
+
+    #pro-jects ol a {
+      text-decoration: none;
+      color: inherit;
+      font-size: 1.5rem;
+      border-radius: 15px;
+      padding: 10px;
+      margin: 10px;
+      font-weight: bold;
+      transition: all 2s ease-in-out;
+      box-shadow: 0 0 20px rgba(26, 115, 232, 0.4);
+      cursor: pointer;
+      display: inline-block;
+    }
+
+    #pro-jects ol a:hover {
+      transform: scale(1.1) rotate(3deg);
+      box-shadow: 0 0 30px rgba(26, 115, 232, 0.7);
+      padding: 5px;
+      margin: 5px;
+      border-radius: 21px;
+    }
+
+    #pro-jects {
+      text-align: center;
+      font-size: 1rem;
+      padding: 10px 20px;
+      border-radius: 10px;
+      background: rgba(255,255,255,0.2);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 0 20px rgba(26, 115, 232, 0.4);
+      font-weight: bold;
+    }
+
+    #navbar {
+      border-radius: 20px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(20px);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+      z-index: 999;
+    }
+
+    #navbar nav ol {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 10px 0;
+      list-style: none;
+      margin: 0;
+      flex-wrap: wrap;
+    }
+
+    #navbar nav ol li {
+      transition: transform 0.2s ease;
+    }
+
+    #navbar nav ol li:hover {
+      transform: scale(1.2);
+    }
+
+    #navbar nav ol li a img {
+      width: 40px;
+      height: 35px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(26, 115, 232, 0.4);
+      transition: all 0.2s ease;
+    }
+
+    #navbar nav ol li a img:hover {
+      box-shadow: 0 0 20px rgba(26, 115, 232, 0.7);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+	  font-size: 32px;
+	  }
+      h2 {
+	  font-size: 26px; 
+	  }
+      p {
+	  font-size: 18px; 
+	  }
+      .game { 
+	  font-size: 22px;
+	  }
+      .icons li img, #navbar nav ol li a img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+  </style>
 </head>
 <body>
-  <div class="container">
-	<h1><strong>معلومات عن  هيما</strong></h1>
-	<h2>مين أنا؟</h2>
-	<p>
-	أنا عندي ١٤ سنة دلوقتي،
-	<br>
-	لسه مبتدئ في تطوير الويب، بس معايا شهادة من كورس سولوليرن.	<br>
-	شوفها تحت شوية.
-<br>
-	الكورس كان فيه:<br>
-	<strong>HTML، CSS، وJavaScript</strong>
-	<br>
-	أنا عملت لعبة روبلوكس وأنا في سنه رابعه ابتدائي، استخدمت كود جاهز ونماذج ببلاش
-	<br>
-	<a href="https://www.roblox.com/games/11822063524/Obby-Migo9Yt" target="_blank" id="game">
-	<strong>دوس هنا وجربها😄</strong>
-	</a>
-	</p>
-  <div class="cerfs">
-	الشهادات:
-	<ul>
-		<li>
-			<img src="https://i.postimg.cc/bv3xMs4y/certificate.png" alt="الشهادة">
-		</li>
-		<li>
-			<img src="https://i.postimg.cc/C1yZrTZY/IMG-3592.jpg" alt="شهادة جافا سكريبت">
-		</li>
-	</ul>
-  </div>
-  <div class="contact">
-	<h3 id="cont">كلّمني على:</h3>
-	<ul class="icons">
-	  <li class="facebook">
-		<a href="https://www.facebook.com/hima.progames" target="_blank" rel="noopener noreferrer">
-		  <img src="https://i.postimg.cc/PqMMN5BF/facebook.png" alt="فيسبوك">
-		</a>
-	  </li>
-	  <li class="email">
-		<a href="mailto:himagaming271@gmail.com" target="_blank" rel="noopener noreferrer">
-		  <img src="https://i.postimg.cc/rm7hRm19/gmail.png" alt="ايميل" onclick='alert("ايميلي: himagaming271@gmail.com")'>
-		</a>
-	  </li>
-	  <li class="Sololearn">
-		<a href="https://www.sololearn.com/en/profile/33892731" target="_blank" rel="noopener noreferrer">
-		  <img src="https://i.postimg.cc/g2x9vfYD/Sololearn.png" alt="بروفايلي على سولوليرن">
-		</a>
-	  </li>
-	</ul>
-  </div>
-  <section class="end">
-	<footer>
-	© ٢٠٢٥ إبراهيم هاني. كل الحقوق محفوظة
-	</footer>
+
+<div id="container">
+  <section id="About">
+    <h1>
+	<strong>
+	بورتفوليو هيما
+	</strong>
+	</h1>
+    <h2>
+	من أنا؟
+	</h2>
+    <p>
+      عندي ١٤ سنة حاليًا،
+	  <br>
+      مبتدئ في تطوير المواقع، لكن حصلت على شهادة من كورس SoloLearn.
+	  <br>
+      الكورس شمل:
+	  <strong>
+	  HTML، CSS، وJavaScript
+	  </strong>
+	  <br>
+      عملت لعبة على روبلوكس وأنا عندي ٩ سنين بكود جاهز ونماذج مجانية.
+      <br>
+      <a href="https://www.roblox.com/games/11822063524/Obby-Migo9Yt" target="_blank" class="game">
+        <strong>
+		اضغط هنا وجربها!
+		</strong>
+      </a>
+    </p>
   </section>
+
+  <section id="pro-jects">
+    <h2>المشاريع:</h2>
+    <ol>
+      <li>
+        <a href="https://himaxtechh2.github.io/calculator/">آلة حاسبة بسيطة</a>
+      </li>
+    </ol>
+  </section>
+
+  <section id="cerfs">
+    الشهادات:
+    <ul>
+      <li>
+	  <img src="https://i.postimg.cc/bv3xMs4y/certificate.png" alt="شهادة سولوليرن">
+	  </li>
+      <li>
+	  <img src="https://i.postimg.cc/C1yZrTZY/IMG-3592.jpg" alt="شهادة جافا سكريبت متقدمة">
+	  </li>
+    </ul>
+  </section>
+
+  <section id="call" class="contact">
+    <h3 id="cont">
+	تواصل معايا:
+	</h3>
+    <ul class="icons">
+      <li>
+        <a href="https://www.facebook.com/hima.progames" target="_blank">
+          <img src="https://i.postimg.cc/PqMMN5BF/facebook.png" alt="فيسبوك">
+        </a>
+      </li>
+      <li>
+        <a href="mailto:himagaming271@gmail.com" target="_blank">
+          <img src="https://i.postimg.cc/rm7hRm19/gmail.png" alt="Gmail">
+        </a>
+      </li>
+      <li>
+        <a href="https://www.sololearn.com/en/profile/33892731" target="_blank">
+          <img src="https://i.postimg.cc/g2x9vfYD/Sololearn.png" alt="بروفايلي على سولوليرن">
+        </a>
+      </li>
+    </ul>
+  </section>
+</div>
+
+<section id="end">
+  <footer>
+    © ٢٠٢٥ إبراهيم هاني. جميع الحقوق محفوظة.
+  </footer>
+</section>
+
+<div id="navbar">
+  <nav>
+    <ol>
+      <li>
+	  <a href="#About">
+	  <img src="https://i.postimg.cc/B6y1ChnG/que.png" alt="من أنا">
+	  </a>
+	  </li>
+      <li><a href="#cerfs">
+	  <img src="https://i.postimg.cc/QMdStx4Y/certificate-icon.png" alt="الشهادات">
+	  </a>
+	  </li>
+      <li>
+	  <a href="#pro-jects">
+	  <img src="https://i.postimg.cc/gJdk9jYj/project-icon.png" 
+	  alt="مشاريع"
+	  >
+	  </a>
+	  </li>
+      <li><a href="#call"><img src="https://i.postimg.cc/pdQRBvDH/contact-icon.png" alt="تواصل"></a></li>
+    </ol>
+  </nav>
+</div>
 </body>
 </html>
