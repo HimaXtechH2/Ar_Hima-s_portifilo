@@ -9,11 +9,12 @@
   <link rel="icon" href="https://i.postimg.cc/qByY6PRx/portifilo.png" type="image/png">
   <style>
     body {
-      margin: 0;
+     margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
       color: #222;
-      background: url("https://i.postimg.cc/FR3bwWW5/pexels-padrinan-19670.png") no-repeat center center;
+      background: url("https://i.postimg.cc/FR3bwWW5/pexels-padrinan-19670.png") no-repeat fixed;
+	  background-position:center;
       background-size: cover;
       animation: fadein 4s ease;
     }
@@ -150,22 +151,22 @@
     #end {
       text-align: center;
       font-size: 1.2rem;
-      color: orange;
+      color: ORANGE;
       position: fixed;
       padding: 10px 20px;
       border-radius: 10px;
       bottom: 30px;
       left: 50%;
       transform: translateX(-50%);
-      background: rgba(255,255,255,0.2);
-      backdrop-filter: blur(8px);
       box-shadow: 0 0 20px rgba(26, 115, 232, 0.4);
       font-weight: bold;
+      background: rgba(255,255,255,0.2);
+      backdrop-filter: blur(8px);
     }
 
     #pro-jects ol {
       list-style: none;
-      text-align: right;
+      text-align: left;
       padding: 0;
       margin: 0;
     }
@@ -246,18 +247,25 @@
 
     @media (max-width: 600px) {
       h1 {
-	  font-size: 32px;
-	  }
+        font-size: 32px;
+      }
       h2 {
-	  font-size: 26px; 
-	  }
+        font-size: 26px;
+      }
       p {
-	  font-size: 18px; 
-	  }
-      .game { 
-	  font-size: 22px;
-	  }
-      .icons li img, #navbar nav ol li a img {
+        font-size: 18px;
+      }
+      .game {
+        font-size: 22px;
+      }
+      .game:hover {
+        transform: scale(1.1) rotate(2deg);
+      }
+      .icons li img {
+        width: 30px;
+        height: 30px;
+      }
+      #navbar nav ol li a img {
         width: 30px;
         height: 30px;
       }
@@ -342,6 +350,66 @@ body.dark-theme {
   backdrop-filter: blur(10px);
   color: white;
 }
+.Soon {
+font-size:1.5rem;
+}
+@media (max-width: 900px) {
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  p {
+    font-size: 20px;
+  }
+  .game {
+    font-size: 24px;
+  }
+  .icons li img,
+  #navbar nav ol li a img {
+    width: 35px;
+    height: 35px;
+  }
+  .Soon {
+    font-size: 1.2rem;
+  }
+  #end {
+    font-size: 1rem;
+    padding: 6px 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .game {
+    font-size: 18px;
+  }
+  .icons li img,
+  #navbar nav ol li a img {
+    width: 28px;
+    height: 28px;
+  }
+  .Soon {
+    font-size: 1rem;
+  }
+  #end {
+    font-size: 0.9rem;
+    bottom: 20px;
+  }
+  #cerfs img {
+    max-width: 100%;
+    height: auto;
+  }
+}
   </style>
 </head>
 <body>
@@ -388,6 +456,11 @@ body.dark-theme {
 		آلة حاسبة بسيطة
 		</a>
       </li>
+	    <li>
+		    <em class = "Soon">
+			مشاريع جديده قريبا...
+		    </em>
+	    </li>
     </ol>
   </section>
 
