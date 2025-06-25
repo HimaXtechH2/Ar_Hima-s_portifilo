@@ -3,22 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>
-  بورتيفيلو هيما
-  </title>
+  <title>بورتيفيلو هيما</title>
   <link rel="icon" href="https://i.postimg.cc/qByY6PRx/portifilo.png" type="image/png">
   <style>
+   
     :root {
       --primary-color: #3498db;
       --secondary-color: #2ecc71;
       --accent-color: #e74c3c;
       --dark-bg: #1a1a2e;
       --light-bg: #f8f9fa;
-      --text-dark: #333;
-      --text-light: #fff;
       --card-bg: rgba(255, 255, 255, 0.1);
       --shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       --transition: all 0.3s ease;
+      --text-dark: #333;
+      --text-light: #fff;
+      --border-radius: 15px;
     }
 
     .dark-theme {
@@ -38,8 +38,8 @@
     }
 
     body {
-	font-weight:1000;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: bold;
       color: var(--text-dark);
       background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
                   url("https://i.postimg.cc/FR3bwWW5/pexels-padrinan-19670.png") no-repeat fixed center;
@@ -48,6 +48,7 @@
       transition: var(--transition);
       padding-bottom: 60px;
       line-height: 1.6;
+      direction: rtl;
     }
 
     body.dark-theme {
@@ -65,22 +66,22 @@
       max-width: 1000px;
       margin: 100px auto 40px;
       padding: 20px;
-      display: grid;
-      grid-template-columns: 1fr;
+      display: flex;
+      flex-direction: column;
       gap: 30px;
       position: relative;
       z-index: 2;
     }
 
-
     section {
       background: var(--card-bg);
       backdrop-filter: blur(10px);
-      border-radius: 20px;
+      border-radius: var(--border-radius);
       padding: 30px;
       box-shadow: var(--shadow);
       transition: var(--transition);
       border: 1px solid rgba(255, 255, 255, 0.1);
+      text-align: center;
     }
 
     section:hover {
@@ -108,9 +109,7 @@
       margin: 0 auto 25px;
     }
 
-    /* About section with photo */
     #About {
-      text-align: center;
       position: relative;
       overflow: hidden;
     }
@@ -123,8 +122,8 @@
     }
 
     .profile-photo {
-      width: 200px;
-      height: 200px;
+      width: 220px;
+      height: 220px;
       border-radius: 50%;
       object-fit: cover;
       border: 5px solid var(--primary-color);
@@ -138,20 +137,6 @@
       box-shadow: 0 0 35px rgba(52, 152, 219, 0.8);
     }
 
-    .verified-badge {
-      position: absolute;
-      bottom: 30px;
-      right: calc(50% - 130px);
-      background: var(--secondary-color);
-      color: white;
-      padding: 5px 10px;
-      border-radius: 20px;
-      font-size: 0.9rem;
-      font-weight: bold;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-      z-index: 5;
-    }
-
     #About p {
       font-size: 1.2rem;
       line-height: 1.8;
@@ -161,11 +146,6 @@
       max-width: 800px;
       margin-left: auto;
       margin-right: auto;
-    }
-
-    .highlight {
-      color: var(--accent-color);
-      font-weight: bold;
     }
 
     .game {
@@ -187,7 +167,7 @@
       box-shadow: 0 6px 20px rgba(46, 204, 113, 0.5);
     }
 
-    /* Projects section */
+    /* تصميم جديد للمشاريع */
     #pro-jects {
       text-align: center;
     }
@@ -212,7 +192,7 @@
       background: var(--secondary-color);
       color: white;
       padding: 15px;
-      border-radius: 15px;
+      border-radius: var(--border-radius);
       font-size: 1.1rem;
       text-decoration: none;
       transition: var(--transition);
@@ -230,12 +210,13 @@
       background: #f39c12;
       color: white;
       padding: 15px;
-      border-radius: 15px;
+      border-radius: var(--border-radius);
       font-size: 1.1rem;
       font-style: italic;
       box-shadow: 0 4px 15px rgba(243, 156, 18, 0.4);
     }
 
+    /* تصميم جديد للشهادات */
     #cerfs {
       text-align: center;
     }
@@ -257,7 +238,7 @@
 
     #cerfs img {
       width: 100%;
-      border-radius: 15px;
+      border-radius: var(--border-radius);
       transition: var(--transition);
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
       border: 1px solid rgba(255, 255, 255, 0.2);
@@ -268,6 +249,7 @@
       box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
     }
 
+    /* تصميم جديد للتواصل */
     .contact {
       text-align: center;
     }
@@ -305,6 +287,7 @@
       filter: invert(1);
     }
 
+    /* تصميم جديد للفوتر */
     #end {
       text-align: center;
       position: fixed;
@@ -324,6 +307,7 @@
       font-weight: bold;
     }
 
+    /* تصميم جديد للشريط العلوي */
     #navbar {
       position: fixed;
       top: 0;
@@ -373,6 +357,7 @@
       filter: invert(90%);
     }
 
+    /* تصميم جديد لتبديل السمة */
     .theme-toggle {
       position: relative;
       display: inline-block;
@@ -425,7 +410,7 @@
                         radial-gradient(circle at 70% 70%, black 25%, transparent 25%);
     }
 
-    /* Animation */
+    /* تصميم جديد للرسوم المتحركة */
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
@@ -450,7 +435,7 @@
       animation: float 4s ease-in-out infinite;
     }
 
-    /* Responsive */
+    /* تصميم متجاوب جديد */
     @media (max-width: 768px) {
       #container {
         margin: 80px 15px 40px;
@@ -485,11 +470,10 @@
       }
 
       .profile-photo {
-        width: 160px;
-        height: 160px;
+        width: 180px;
+        height: 180px;
       }
-
-
+    }
 
     @media (max-width: 480px) {
       h1 {
@@ -514,11 +498,9 @@
       }
 
       .profile-photo {
-        width: 140px;
-        height: 140px;
+        width: 150px;
+        height: 150px;
       }
-
-
     }
   </style>
 </head>
@@ -549,8 +531,7 @@
         <li>
           <label class="theme-toggle">
             <input type="checkbox" id="theme-switch">
-            <span class="slider">
-			</span>
+            <span class="slider"></span>
           </label>
         </li>
       </ol>
@@ -562,58 +543,38 @@
       <div class="profile-container">
         <img src="https://i.postimg.cc/02cW3W6v/MyPhoto.jpg" alt="صوره هيما(انا)" class="profile-photo">
       </div>
-      <h1>
-	  <strong>
-بورتيفيلو هيما
-	  </strong>
-	  </h1>
-      <h2>
-	  معلومات عني صغيره
-	  </h2>
+      <h1><strong>بورتيفيلو هيما</strong></h1>
+      <h2>معلومات عني صغيره</h2>
       <p>
-أنا عندي 14 سنة، ومطور مواقع مبتدئ عندي حماس نار، ومعايا شهادة إني خلصت كورس SoloLearn بالكامل يا معلم!
-        <br>
-		<br>
-الكورس بتاع sololearn كان فيه:
+        أنا عندي 14 سنة، ومطور مواقع مبتدئ عندي حماس نار، ومعايا شهادة إني خلصت كورس SoloLearn بالكامل يا معلم!
+        <br><br>
+        الكورس بتاع sololearn كان فيه:
         <br>
         <strong>HTML, CSS, وJavaScript</strong>
+        <br><br>
+        أنا عملت لعبة Roblox وأنا عندي 9 سنين باستخدام كود Vibe ونماذج جاهزة فري كده على المزاج!
         <br>
-		<br>
-       أنا عملت لعبة Roblox وأنا عندي 9 سنين باستخدام كود Vibe ونماذج جاهزة فري كده على المزاج!
-        <br>
-        <a href="https://www.roblox.com/games/11822063524/Obby-Migo9Yt" target="_blank" class="game">
-	جرب لعبتي!
-		</a>
+        <a href="https://www.roblox.com/games/11822063524/Obby-Migo9Yt" target="_blank" class="game">جرب لعبتي!</a>
       </p>
     </section>
 
     <section id="pro-jects">
-      <h2>
-	  المشاريع:
-	  </h2>
+      <h2>المشاريع:</h2>
       <ol>
         <li>
-          <a href="https://himaxtechh2.github.io/Ar-calc/" class="project-link" target="_blank">
-           أله حاسبه فشيخه
-          </a>
+          <a href="https://himaxtechh2.github.io/Ar-calc/" class="project-link" target="_blank">آلة حاسبه فشيخه</a>
         </li>
         <li>
-          <a href="https://himaxtechh2.github.io/Ar-Age-calc" class="project-link" target="_blank">
-            اله حاسبه للعمر!
-          </a>
+          <a href="https://himaxtechh2.github.io/Ar-Age-calc" class="project-link" target="_blank">آلة حاسبه للعمر!</a>
         </li>
         <li>
-          <em class="Soon">
-		مشاريع جديده قريبا...
-		  </em>
+          <em class="Soon">مشاريع جديده قريبا...</em>
         </li>
       </ol>
     </section>
 
     <section id="cerfs">
-      <h2>
-	  الشهادات:
-	  </h2>
+      <h2>الشهادات:</h2>
       <ul>
         <li>
           <img src="https://i.postimg.cc/bv3xMs4y/certificate.png" alt="شهاده برمجه المواقع">
@@ -625,9 +586,7 @@
     </section>
 
     <section id="call" class="contact">
-      <h2>
-	  كلمني على:
-	  </h2>
+      <h2>كلمني على:</h2>
       <ul class="icons">
         <li>
           <a href="https://www.facebook.com/hima.progames" target="_blank" title="فيسبوك">
@@ -649,9 +608,7 @@
   </div>
 
   <section id="end">
-    <footer>
-      &copy; 2025 جميع الحقوق محفوظه ابراهيم هاني
-    </footer>
+    <footer>&copy; 2025 جميع الحقوق محفوظه ابراهيم هاني</footer>
   </section>
 
   <script>
@@ -665,7 +622,6 @@
       const themeSwitch = document.getElementById('theme-switch');
       themeSwitch.addEventListener('change', changeTheme);
       
-
       const savedTheme = localStorage.getItem('theme');
       if (savedTheme === 'dark') {
         document.body.classList.add('dark-theme');
